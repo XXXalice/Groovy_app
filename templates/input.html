@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            name input
+        </title>
+    </head>
+    <body>
+        <p th:text="${msg}">${msg}</p>
+        <form method="POST" action="/send">
+            <input type="text" name="text1" placeholder="name" th:value="${value}"/>
+            <input type="submit" value="Click"/>
+        </form>
+    </body>
+</html>
